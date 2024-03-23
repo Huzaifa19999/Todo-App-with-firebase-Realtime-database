@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="stylesheet" href="style.css">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<!-- <link rel="stylesheet" href="stylss"> -->
 </head>
 <body>
-    <div class="maindiv">
-      <div>
-        <input type="text" id="inputTodo" placeholder="Enter todo">
-        <button id="addTodo" onclick="addTodo()">Add</button>
-        <button id="deleteAllTodo" onclick="deleteAllTodo()">DeleteAll</button>
-      </div>
-      <div id="todoList"> 
+<div class="container">
+    <h1>Todo App</h1>
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Enter todo...">
+        <button onclick="Addbtn()" type="submit">Add</button>
+    </form>
+<ul class="todo-list" id="todoList"></ul>
 
-        <ul id="list">
-           
-        </ul>
-
+    <div class="delete-all">
+        <button onclick="deleteAll()">Delete All</button>
     </div>
-    </div>
-    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
-      
-  <script  src="app.js"></script>
-
+</div>
+<script type="module" src="app.js">
+    
+</script>
 </body>
 </html>
