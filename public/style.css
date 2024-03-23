@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    margin-top: 20px;
+
+}
+
+#inputTodo {
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 70px;
+}
+
+#addTodo, #updateTodo, #deleteAllTodo {
+    height: 40px;
+    width: 80px;
+    font-size: 16px;
+}
+
+#todoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todoItem {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.deleteBtn, .editBtn {
+    height: 30px;
+    width: 60px;
+    background-color: #ff5858;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.maindiv {
+
+    display: flex;
+    flex-direction: column;
+}
